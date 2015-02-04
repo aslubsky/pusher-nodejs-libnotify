@@ -1,0 +1,1 @@
+@reboot /usr/local/bin/forever start ./run.js

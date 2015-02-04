@@ -1,0 +1,17 @@
+{
+  "name": "pusher-client",
+  "version": "0.0.1",
+  "description": "",
+  "main": "run.js",
+  "dependencies": {
+    "libnotify": "~1.0.4",
+    "pusher-node-client": "0.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Davintoo",
+  "license": "BSD"
+}
