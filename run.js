@@ -26,6 +26,7 @@ argsList.forEach(function (a) {
 var pres, pusher_client;
 pusher_client = new PusherClient(args);
 pres = null;
+
 pusher_client.on('connect', function() {
     console.log('connected');
     pres = pusher_client.subscribe("collaborator");
@@ -36,4 +37,7 @@ pusher_client.on('connect', function() {
         });
     });
 });
-pusher_client.connect();
+
+setTimeout(function(){
+    pusher_client.connect();
+}, 60*1000);
