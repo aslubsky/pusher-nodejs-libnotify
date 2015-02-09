@@ -31,13 +31,11 @@ pusher_client.on('connect', function() {
     console.log('connected');
     pres = pusher_client.subscribe("collaborator");
     return pres.on('build-complete', function(data) {
-        //console.log('data', data);
+        console.log('data', data);
         libnotify.notify(data.message, {
             time: 5000
         });
     });
 });
 
-setTimeout(function(){
-    pusher_client.connect();
-}, 60*1000);
+pusher_client.connect();
